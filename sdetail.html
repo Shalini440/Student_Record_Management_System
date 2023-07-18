@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Home</title>
+    <style media="screen">
+      body{
+      margin:0;
+      padding:3px;
+      }
+      .saloni1{
+        width:300px;
+        height:580px;
+        background-color: #1a53ff;
+         padding:20px;
+          float: left;
+
+        }
+        .saloni2{
+         width:100px;
+        height:100px;
+        border-radius: 50%;
+        background-color: white;
+         }
+        .name{
+        width:300px;
+        border:none;
+        height:30px;
+        background-color: #1a53ff;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+         font-family: sans-serif;
+         color: white;
+        }
+
+         h4{
+        color:white;
+
+          }
+          button{
+          color:white;
+          font-weight: bold;
+          font-size: 20px;
+           margin: 10px;
+          background-color:#1a53ff;
+           border:none;
+
+           list-style-type: none;
+          }
+          button:hover{
+          cursor:pointer;
+          background-color:rgba(0,0,0,0.7);
+          }
+          button:active{
+            background-color:rgba(0,0,0,0.7);
+           }
+
+#bagal{
+  width: 990px;
+  height: 615px;
+  border:1px solid green;
+  margin-left: 350px;
+  position: absolute;
+}
+#invisible{
+  display: none;
+  width:50px;
+  height:50px;
+  border: 1px solid black;
+}
+.box h1{
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+div {
+border-color:1px solid black;
+}
+.second{
+  background: #C71585;
+  width: 70%;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 1px solid black;
+  border: 2px solid black;
+}
+.note a{
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+.note{
+  font-size: 20px;
+}
+.note a:hover{
+  color:blue;
+}
+.services{
+  margin: 34px;
+  display: flex;
+}
+ .box{
+   margin-left:365px;
+width:970px;
+height:580px;
+background-color:black;
+
+   display:none;
+}
+.box1{
+  padding: 10px;
+  margin: 3px 3px;
+}
+.box2{
+  padding: 10px;
+  margin: 3px 3px;
+}
+.box img{
+  height: 200px;
+  border: 2px solid black;
+  margin: auto;
+  display: block;
+}
+.box1 img{
+  height: 200px;
+  border: 2px solid black;
+  margin: auto;
+  display: block;
+}
+.box2 img{
+  height: 200px;
+  border: 2px solid black;
+  margin: auto;
+  display: block;
+}
+.div1{
+border:1px solid black;
+width:200px;
+height:550px;
+float:left;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right:35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.shruti{
+margin-left:500px;
+margin-top:0px;
+
+}
+.shruti input{
+  background:none;
+}
+.shruti label{
+  color:black;
+  display:inline-block;
+}
+.shruti img{
+  height:150px;
+}
+#hu4{
+  display: none;
+}
+
+</style>
+<script>
+function noti(){
+
+document.getElementById("hu3").style.display="block";
+}
+function sp(){
+  document.getElementById("hu3").style.display = "none";
+}
+function personal(){
+
+document.getElementById("hu4").style.display="block";
+}
+function sp2(){
+  document.getElementById("hu4").style.display = "none";
+}
+
+
+</script>
+  </head>
+  <body>
+    <div class="saloni1">
+      <center>
+      <div class="saloni2">
+
+      </div><br>
+      <div class="name">
+         NAME
+      </div>
+      <h4>Student | S3 SCHOOL</h4>
+    </center>
+    <hr>
+    <br><br><br>
+    <nav id="menu">
+    <button type="button" name="button" onclick="personal()">PERSONAL DETAILS</button><br>
+    <button type="button" name="button" onclick="noti()">NOTICE</button><br>
+    <button type="button" name="button">ATTENDANCE</button><br>
+    <a href="index.html">
+    <button type="button" name="button">LOGOUT</button></a>
+    </nav>
+
+    </div>
+    </div>
+    <div id="bagal">
+
+  </div>
+  <div class="box" id="hu3">
+  <div class="first">
+    <center>
+  <h1>Notice Board</h1></center>
+  </div>
+  <span onclick="sp()" class="close">&times;</span>
+  <center>
+  <div class="second">
+  <marquee class="note" direction="up" scrolldelay="1" onmouseover="this.stop()"onmouseout="this.start()">
+    <center>
+    <p>Notification1<a href="#" target="_blank">View</a></p>
+    <br><hr>
+     <p>Notification2<a href="#" target="_blank">View</a></p>
+    <br><hr>
+    <p>Notification3<a href="#" target="_blank">View</a></p>
+    <br><hr>
+    <p>Notification4<a href="#" target="_blank">View</a></p>
+    <br><hr>
+    <p>Notification5<a href="#" target="_blank">View</a></p>
+    <br><hr>
+    </center>
+    </marquee>
+  </div>
+  </center>
+  </div>
+  <div class="" id="hu4">
+    <span onclick="sp2()" class="close">&times;</span>
+    <table class="shruti" cellspacing="5" cellpadding="10">
+  <tr>
+  <td>  <img src="logo1.jpeg" alt=""></td></tr>
+  <tr>
+  <td>  <label> FIRST NAME:</label></td>
+  <td><input type="text" name="last"></td></tr>
+    <tr>
+    <td>  <label> LAST NAME:</label></td>
+    <td><input type="text" name="last"></td></tr>
+    <tr>
+    <td><label> REGISTRATION NUMBER:</label></td>
+  <td><input type="text" name="reg"></td></tr>
+  <tr>
+  <td>  <label>ROLL NUMBER:</label></td>
+  <td>  <input type="text" name="roll"></td></tr>
+  <tr>
+    <td><label>CLASS:</label></td>
+  <td><input type="text" name="class"></td></tr>
+  <tr>
+  <td>  <label>BATCH:</label></td>
+  <td><input type="text" name="batch"></td></tr>
+  <tr>
+  <td>  <label>EMAIL ID:</label></td>
+  <td><input type="text" name="last"></td></tr>
+  <tr>
+    <td><label>FATHER'S NAME:</label></td>
+  <td><input type="text" name="batch"></td></tr>
+
+  </table>
+
+
+  </div>
+
+  </body>
+</html>

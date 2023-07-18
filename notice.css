@@ -1,0 +1,67 @@
+body{
+  background: url("sss.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box h1{
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+div {
+border-color:1px solid black;
+}
+.second{
+  background: #C71585;
+  width: 40%;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 1px solid black;
+  border: 2px solid black;
+}
+.note a{
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+.note{
+  font-size: 20px;
+}
+.note a:hover{
+  color:blue;
+}
+.services{
+  margin: 34px;
+  display: flex;
+}
+ .box{
+   padding: 10px;
+   margin: 3px 3px;
+}
+.box1{
+  padding: 10px;
+  margin: 3px 3px;
+}
+.box2{
+  padding: 10px;
+  margin: 3px 3px;
+}
+.box img{
+  height: 200px;
+  border: 2px solid black;
+  margin: auto;
+  display: block;
+}
+.box1 img{
+  height: 200px;
+  border: 2px solid black;
+  margin: auto;
+  display: block;
+}
+.box2 img{
+  height: 200px;
+  border: 2px solid black;
+  margin: auto;
+  display: block;
+}

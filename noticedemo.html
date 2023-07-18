@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        background: url("sss.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .box h1{
+        color: white;
+        text-align: center;
+        justify-content: center;
+      }
+      div {
+      border-color:1px solid black;
+      }
+      .second{
+        background: #C71585;
+        width: 70%;
+        height: 500px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 1px solid black;
+        border: 2px solid black;
+      }
+      .note a{
+        color: black;
+        text-align: center;
+        justify-content: center;
+      }
+      .note{
+        font-size: 20px;
+      }
+      .note a:hover{
+        color:blue;
+      }
+      .services{
+        margin: 34px;
+        display: flex;
+      }
+       .box{
+         margin-left:400px;
+width:900px;
+height:580px;
+background-color:black;
+
+         display:none;
+      }
+      .box1{
+        padding: 10px;
+        margin: 3px 3px;
+      }
+      .box2{
+        padding: 10px;
+        margin: 3px 3px;
+      }
+      .box img{
+        height: 200px;
+        border: 2px solid black;
+        margin: auto;
+        display: block;
+      }
+      .box1 img{
+        height: 200px;
+        border: 2px solid black;
+        margin: auto;
+        display: block;
+      }
+      .box2 img{
+        height: 200px;
+        border: 2px solid black;
+        margin: auto;
+        display: block;
+      }
+      .div1{
+      border:1px solid black;
+      width:200px;
+      height:550px;
+      float:left;
+      }
+      .close {
+        position: absolute;
+        top: 15px;
+        right:35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+
+    </style>
+    <script>
+      function noti(){
+
+      document.getElementById("hu3").style.display="block";
+      }
+      function sp(){
+        document.getElementById("hu3").style.display = "none";
+      }
+
+
+    </script>
+  </head>
+  <body>
+<div class="div1" id="hu1">
+<button type="button" name="button" onclick="noti()">notice</button>
+</div>
+
+  <div class="box" id="hu3">
+  <div class="first">
+    <center>
+  <h1>Notice Board</h1></center>
+  </div>
+  <span onclick="sp()" class="close">&times;</span>
+  <center>
+  <div class="second">
+  <marquee class="note" direction="up" scrolldelay="1" onmouseover="this.stop()"onmouseout="this.start()">
+    <center>
+    <p>Notification1<a href="#" target="_blank">View</a></p>
+    <br><hr>
+     <p>Notification2<a href="#" target="_blank">View</a></p>
+    <br><hr>
+    <p>Notification3<a href="#" target="_blank">View</a></p>
+    <br><hr>
+    <p>Notification4<a href="#" target="_blank">View</a></p>
+    <br><hr>
+    <p>Notification5<a href="#" target="_blank">View</a></p>
+    <br><hr>
+    </center>
+    </marquee>
+  </div>
+  </center>
+  </div>
+
+
+
+
+
+
+
+  </body>
+</html>

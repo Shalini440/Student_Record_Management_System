@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      form{
+        border:5px solid black;
+        width:500px;
+        height:500px;
+      }
+      div{
+        font-size:20px;
+        width:200px;
+        height:200px;
+        border:3px solid red;
+      }
+    </style>
+    <script>
+      function so(){
+        a=parseInt(document.getElementById("t2").value);
+        b=parseInt(document.getElementById("t3").value);
+var eprice=a*500;
+var cprice=b*250;
+var price=eprice+cprice;
+if(price>=1000 && price<2000){
+  document.getElementById("t9").innerHTML="HURRAY!! YOU ARE ELIGIBLE FOR ONE POPCORN.";
+  document.getElementById("t9").style.backgroundImage="url('../../Desktop/pop1.jpg')";
+}
+document.getElementById("t6").value=eprice;
+document.getElementById("t7").value=cprice;
+document.getElementById("t8").value=price;
+
+      }
+    </script>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <center>
+      <h2><u>MOVIE TICKET BOOKING</u></h2>
+      <table>
+        <tr>
+          <td>DATE</td>
+        <td><input type="date" name="" id="t1" value=""></td>
+        </tr>
+        <tr>
+          <td>ELDER</td><td><input type="text"id="t2" name="" value=""></td>
+        </tr>
+        <tr>
+          <td>CHILDREN</td>
+          <td>
+            <input type="text" name=""id="t3" value="">
+          </td>
+        </tr>
+        <tr>
+          <td>CATEGORY</td>
+          <td><select class="" id="t4" name="">
+            <option value="">SILVER</option>
+            <option value="">GOLD</option>
+            <option value="">PLANTINUM</option>
+          </select></td>
+        </tr>
+        <tr>
+        <td>  <input type="button" name="" onclick="so()" id="t5"value="BOOK NOW"></td>
+        </tr>
+        <tr>
+          <td>Eprice</td><td><input type="text"id="t6" name="" value=""></td>
+
+        </tr>
+        <tr>
+<td>Cprice</td><td><input type="text" name="" id="t7"value=""></td>
+          </tr>
+          <tr>
+            <td>PRICE</td><td><input type="text"id="t8" name="" value=""></td>
+          </tr>
+      </table>
+      <div id="t9" class="shruti">
+        <h2><b>OFFERS</b></h2>
+
+      </div>
+      </center>
+    </form>
+  </body>
+</html>
