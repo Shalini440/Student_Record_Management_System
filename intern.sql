@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 4.8.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 24, 2021 at 11:04 AM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 8.0.6
+-- Generation Time: Jun 29, 2021 at 08:21 AM
+-- Server version: 10.1.32-MariaDB
+-- PHP Version: 5.6.36
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -90,8 +91,8 @@ CREATE TABLE `reg` (
   `email` varchar(16) NOT NULL,
   `admissiondate` date NOT NULL,
   `class` int(11) DEFAULT NULL,
-  `stream` tinytext DEFAULT NULL,
-  `subject` text DEFAULT NULL,
+  `stream` tinytext,
+  `subject` text,
   `addnum` int(11) DEFAULT NULL,
   `roll` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -101,7 +102,15 @@ CREATE TABLE `reg` (
 --
 
 INSERT INTO `reg` (`regno`, `fname`, `lname`, `father`, `mother`, `gender`, `dob`, `address`, `category`, `religious`, `religion`, `hobby`, `guardian`, `gno`, `phone`, `altno`, `email`, `admissiondate`, `class`, `stream`, `subject`, `addnum`, `roll`) VALUES
-('sss1000', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', 0, 0, 0, '', '0000-00-00', NULL, NULL, NULL, NULL, NULL);
+('sss1000', '', '', '', '', '', '0000-00-00', '', '', '', '', '', '', 0, 0, 0, '', '0000-00-00', NULL, NULL, NULL, NULL, NULL),
+('sss3287', 'ANSHU', 'KUMARI', 'Rohit Kumar ', 'Rikita Kumari', 'FEMALE', '1999-02-18', 'RUDRA VIHAR, PHASE-2, ASHOK NAGAR , SARKANDA', 'SC', 'MUSLIM', 'INDIAN', 'Playing Outdoors game', 'Rohit Kumar', 2147483647, 2147483647, 2147483647, 'rajeshcool530@gm', '2021-06-02', 12, 'science', NULL, 1011, 3),
+('sss3328', 'Shalini', 'Dubey', 'Lalit Mohan Dubey', 'Kamla Devi', 'FEMALE', '2021-06-09', 'H NO. 10, HILL VIEW COLONY MAIN ROAD, DIMNA ROAD, MANGO ,JAMSHERPUR. -831018', 'GENERAL', 'HINDU', 'INDIAN', 'Art and Craft', 'Lalit Mohan Dubey', 2147483647, 2147483647, 2147483647, '1shalinii9876@gm', '2021-06-23', 12, 'science', NULL, 12345, 1),
+('sss3744', 'ADITI', 'KUMARI', 'ASHOK KUMAR', 'AMRITA KUMARI', 'FEMALE', '1999-01-06', 'Vpo-Ranwari, The chata, Distt- Matura(UP)', 'GENERAL', 'HINDU', 'INDIAN', 'Reading Book', 'Akash kumar', 2147483647, 2147483647, 2147483647, 'singhkunwarmathu', '2021-01-12', 12, 'science', NULL, 1234, 1),
+('sss6570', 'LALIT', 'DUBEY', 'Lalit Mohan Dubey', 'Kamla Devi', 'MALE', '2021-06-02', 'NH 33,H NO. 10,\r\nHILL VIEW COLONY, MAIN ROAD, DIMNA ROAD', 'GENERAL', 'HINDU', 'INDIAN', 'Art and Craft', 'Lalit Mohan Dubey', 2147483647, 2147483647, 2147483647, '1shalinii9876@gm', '2021-06-16', 11, 'science', NULL, 12653, 12),
+('sss8367', 'ANISHA', 'SHAW', 'ABHAY KUMAR', 'SHEELA DEVI', 'FEMALE', '1999-01-12', 'RUDRA VIHAR, PHASE-2, ASHOK NAGAR , SARKANDA', 'GENERAL', 'HINDU', 'INDIAN', 'Art and Craft', 'Abhay Kumar', 2147483647, 2147483647, 2147483647, 'rajeshcool530@gm', '2021-06-02', 12, 'science', NULL, 5678, 2),
+('sss8782', 'Aditi ', 'Singh', 'Akash Jha', 'Anita jha', 'FEMALE', '2000-06-13', 'Vpo-Ranwari, The chata, Distt- Matura(UP)', 'GENERAL', 'MUSLIM', '', 'Art and Craft', 'Akash Jha', 2147483647, 2147483647, 2147483647, 'singhkunwarmathu', '2021-06-01', 12, 'science', NULL, 12345, 34),
+('sss9010', 'ASHA', 'BANDRA', 'Abhishek Kumar', 'Aveeta', 'FEMALE', '1999-02-25', 'UDAIPUR', 'GENERAL', 'HINDU', 'INDIAN', 'Reading Book', 'Abhishek Kumar', 2147483647, 2147483647, 2147483647, 'nikita12paliwal@', '2021-06-02', 12, 'science', NULL, 1213, 4),
+('sss9174', 'AASTHA', 'KUMARI', 'ANIMESH', 'ANANDITA ', 'FEMALE', '2001-06-12', 'UDAIPUR', 'GENERAL', 'MUSLIM', 'INDIAN', 'Book Reading', 'Aandita', 2147483647, 2147483647, 2147483647, 'nikita12paliwal@', '2021-06-01', 12, 'science', NULL, 1314, 34);
 
 -- --------------------------------------------------------
 
@@ -111,6 +120,7 @@ INSERT INTO `reg` (`regno`, `fname`, `lname`, `father`, `mother`, `gender`, `dob
 
 CREATE TABLE `signup` (
   `slno` int(11) NOT NULL,
+  `adminname` text NOT NULL,
   `username` text NOT NULL,
   `password` varchar(16) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -119,10 +129,13 @@ CREATE TABLE `signup` (
 -- Dumping data for table `signup`
 --
 
-INSERT INTO `signup` (`slno`, `username`, `password`) VALUES
-(1, 'shrutijha344@gmail.com', 'shrutijhashrutij'),
-(2, 'anshu55@gmail.com', 'sister678'),
-(3, 'muskanjha4@gmail.com', 'muskanjha');
+INSERT INTO `signup` (`slno`, `adminname`, `username`, `password`) VALUES
+(1, 'shruti', 'shrutijha344@gmail.com', 'shrutijhashrutij'),
+(2, 'Anshu Jha', 'anshu55@gmail.com', 'sister678'),
+(3, 'Muskan Jha', 'muskanjha4@gmail.com', 'muskanjha'),
+(4, 'Shalini Dubey', 'shalini@gmail.com', '12345'),
+(5, 'Shalini', 'Shalini@gmail.com', '123456'),
+(6, 'SHRUTI', 'anshu55@gmail.com', 'sister678');
 
 --
 -- Indexes for dumped tables
@@ -148,7 +161,7 @@ ALTER TABLE `signup`
 -- AUTO_INCREMENT for table `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `slno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `slno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
