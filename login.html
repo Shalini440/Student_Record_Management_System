@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>
+            login Page
+        </title>
+        <meta name="viewport" content="width=device-width initial-scale-1.0">
+    <script src="../bootstrap/jquery-3.6.0.js"></script>
+    <script src="../bootstrap/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#" style="color:#800080;font-family: Franklin;font-size: 20px ;">STUDENT RECORD MANAGMENT SYSTEM</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                 data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left:500px;">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" href="../contact/contact.php">Contact Us<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../internship/login.php">Admin Login</a>
+                    <div style="border-radius: 3px;box-shadow:5px 5px 5px 5px purple; background-color:white;"> 
+                        <a class="nav-link" href="../login/login.html">Login AS Tutor/Student</a></div>
+                  </div>
+                </div>
+        </nav>
+              <div id="div1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" style="margin-top: 20px;" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                  </svg>
+                  <h2 style="padding-top: 20px;">Connecting acadamics, tutor , guardians and students</h2>
+                  <ol type="i" style="padding-top: 30px;padding-left: 70px;text-align: left; font-family: fantasy;">
+                      <li>Student e-diary and Assesment</li><br>
+                      <li>Live Online Examination</li><br>
+                      <li>Digital Notice Board</li><br>
+                      <li>Online Paperless Admission</li><br>
+                      <li>Online Fee Payment</li><br>
+                  </ol>
+    
+              </div>
+              <div id="div2">
+                  <img src="" alt="">
+                <p style="color:black;font-size: 20px;font-family: Arial;margin-top: 60px;"><b>Empowering Users</b></p>
+                <p style="color:teal;font-size: 20px;font-family: Arial;"><b>Enter Your Cerdientials</b></p>
+                <p>LogIn As</p>
+                <button style="font-family: fantasy;font-size: 15px;color: white;border-radius: 10px;background-color: purple;">Tutor</button>
+                <a href="../project1/login.php"><button style="font-family: fantasy;font-size: 15px;color: white;border-radius: 10px;background-color: purple;">Student </button></a>
+                 <form action="./phpfile.php" method="POST">
+                <p style="text-align: left;color:turquoise;padding-left:10px;font-family: arial;"> Username</p>
+                <input type="text"  name="username1" style="text-align: left; border-radius: 15px;">
+                <p style="text-align: left;color: turquoise;padding-left:10px;font-family: arial;">Password</p>
+                <input type="password" name="password1"style="text-align: left; border-radius: 15px;"><br>
+                <input type="checkbox" onclick="checkboxclick()"name="" id="rememberme" style="border-radius: 3px;">
+                &nbsp;&nbsp;Remember Me <br>
+               <a href="../login/tutorhome.php"> 
+                <input type="submit" name="sublogin" style="color: white;width:120px;background-color: rgb(46, 61, 61);
+                border-radius: 10px;border-color: turquoise; 
+                font-size: 15px;font-family: Arial;margin-top: 30px;" value="LOG IN">
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <br>
+               <a href="./signup.html">SignUp As New User</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <a href="">Forgotten Password</a>
+            </form>
+              </div>   
+        
+        <style>
+            body{
+                background-image: url('./bg2.jpg');
+                background-repeat:no-repeat;
+               background-size:cover;
+            }
+            #div1
+            {
+                width: 400px;
+                height: 500px;
+                margin-top: 30px;
+                margin-left: 250px;
+                color: white;
+                text-align: center;
+                font-family: cursive;        
+                background-color: rgb(68, 16, 83);
+                border-radius: 5px;
+                float: left;
+            }
+            #div2
+            {
+                width: 400px;
+                height: 500px;
+                text-align: center;
+                margin-top: 30px;
+                margin-left: 50px;
+                background-color:white;
+                border-radius: 5px;
+                float: left;
+            }
+        </style>
+        <script>
+               
+            function checkboxclick()
+            {
+                document.getElementById("rememberme").style.backgroundColor="blue";
+            }
+            function click()
+            {
+                document.getElementById("button1").style.backgroundColor="blue";
+            }
+        </script>
+          </body>
+          </html>

@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>
+            Sign Up
+        </title>
+        <meta name="viewport" content="width=device-width initial-scale-1.0">
+    <script src="../bootstrap/jquery-3.6.0.js"></script>
+    <script src="../bootstrap/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">STUDENT RECORD MANAGMENT SYSTEM</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                 data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                 
+              </nav>
+              
+              <div id="div1">
+                  <img src="" alt="">
+                <p style="color:white;font-size: 20px;font-family: Arial;margin-top: 60px;"><b>SIGN UP AS TUTOR</b></p>
+                <form action="./phpfile.php" method="POST">
+                  <table cellpadding="4">
+                     <tr>
+                        <td> Enter Username:</td>
+                        <td><input type="text"name="username"></td>
+                     </tr>
+                     <tr>
+                        <td>Enter Phone Number: </td>
+                        <td><input type="tel" name="phone"></td>
+                     </tr>
+                     <tr>
+                        <td>Enter Email Address: </td>
+                        <td> <input type="email" name="email"></td>
+                     </tr>
+                     <tr>
+                        <td>Enter Date Of Birth:</td>
+                        <td><input type="varchar" name="DOB"></td>
+                     </tr>
+                     <tr>
+                        <td>Select gender :</td>
+                        <td>Male: <input type="radio" name="gender" value="Male">
+                           Female: <input type="radio" name="gender" value="Female"><br></td>
+                     </tr>
+                     <tr>
+                        <td>Designation: </td>
+                        <td><input type="text" name="designation"></td>
+                     </tr>
+                     <tr>
+                        <td> Date of Joining :</td>
+                        <td><input type="varchar" name="DateOfJoining"></td>
+                     </tr>
+                     <tr>
+                        <td>Grade: </td>
+                        <td><input type="text" name="grade"></td>
+                     </tr>
+                     <tr>
+                        <td>Job Type: </td>
+                        <td><input type="text" name="jobtype"></td>
+                     </tr>
+
+                     <tr>
+                        <td>Set your password:</td>
+                        <td><input type="text" name="password"></td>
+                     </tr>
+                   
+               </table>
+               <input type="submit" name="subsign" value="Sign Up" id="signup">
+
+               </form>
+                 </div>   
+        
+        <style>
+           #signup{
+              width: 100px;
+              height: fit-content;
+              margin-top: 10px;
+              border-radius: 5px;
+              background-color: rgb(82, 23, 82);
+              color: white;
+              font-size:20px;
+              font-family:sans-serif;
+           }
+           td>input{
+              border-radius: 10px;
+             
+           }
+           table{
+              width: 70%;
+              color:white;
+              margin-left: 200px;
+              font-size: 18px;
+              text-align: left;
+              font-family: sans-serif;
+           }
+            body{
+                background-image:url('./bg7.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #div1
+            {
+                width: 70%;
+                height: fit-content;
+                text-align: center;
+                margin-top: 30px;
+                margin-left: 250px;
+                background:rgba(83, 154, 182, 0.4);
+                border-radius: 5px;
+                float: left;
+            }
+        </style>
+        <script>
+               
+            function checkboxclick()
+            {
+                document.getElementById("rememberme").style.backgroundColor="blue";
+            }
+            function click()
+            {
+                document.getElementById("button1").style.backgroundColor="blue";
+            }
+        </script>
+          </body>
+          </html>
+
+
